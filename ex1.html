@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Личная форма</title>
+    <link rel="stylesheet" href="css/1style.css">
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <label for="fname">Имя:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Фамилия:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="address">Адрес:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label>Интересы:</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Музыка</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Спорт</label><br>
+        <input type="checkbox" id="movies" name="interests" value="movies">
+        <label for="movies">Фильмы</label><br>
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="comments">Комментарии:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+        <label for="birthdate">Дата рождения:</label><br>
+        <input type="date" id="birthdate" name="birthdate"><br>
+        <input type="submit" value="Отправить">
+    </form>
+    <p>Перейти на <a href="https://www.example.com">другой веб-документ</a>.</p>
+</body>
+
+</html>

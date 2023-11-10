@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Зачетная книжка</title>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <h1>Зачетная книжка</h1>
+        <h2>Экзамены:</h2>
+        <ul>
+            <li>
+                <label for="math">Алгебра:</label>
+                <input type="radio" id="math" name="math" value="5">5
+                <input type="radio" id="math" name="math" value="4">4
+                <input type="radio" id="math" name="math" value="3">3
+            </li>
+            <li>
+                <label for="physics">Физика:</label>
+                <input type="radio" id="physics" name="physics" value="5">5
+                <input type="radio" id="physics" name="physics" value="4">4
+                <input type="radio" id="physics" name="physics" value="3">3
+            </li>
+            <li>
+                <label for="it">Информационные технологии в программировании:</label>
+                <input type="radio" id="it" name="it" value="5">5
+                <input type="radio" id="it" name="it" value="4">4
+                <input type="radio" id="it" name="it" value="3">3
+            </li>
+        </ul>
+        <h2>Зачеты:</h2>
+        <ul>
+            <li>
+                <label for="eng">Английский язык для академических целей:</label>
+                <input type="radio" id="eng" name="eng" value="1">Зачтено
+                <input type="radio" id="eng" name="eng" value="0">Незачтено
+
+            </li>
+            <li>
+                <label for="ru">Практика коммуникации на русском языке:</label>
+                <input type="radio" id="ru" name="ru" value="1">Зачтено
+                <input type="radio" id="ru" name="ru" value="0">Незачтено
+
+            </li>
+        </ul>
+
+        <h2>Дополнительные курсы:</h2>
+        <input type="checkbox" id="course1" name="course1" value="course1">
+        <label for="course1">Курс 1</label><br>
+        <input type="checkbox" id="course2" name="course2" value="course2">
+        <label for="course2">Курс 2</label><br>
+        <input type="checkbox" id="course3" name="course3" value="course3">
+        <label for="course3">Курс 3</label><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+
+</html>
