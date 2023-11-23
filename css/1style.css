@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100hv;
     margin: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -13,10 +13,17 @@ form {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     width: 80%;
     max-width: 500px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 label {

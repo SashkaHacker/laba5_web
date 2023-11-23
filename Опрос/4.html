@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Опрос общественного мнения</title>
+    <link rel="stylesheet" href="../css/2style.css">
+</head>
+
+<body>
+    <form>
+        <h2>Страница 4: Ваши предпочтения при покупке автомобиля</h2>
+        <label for="payment_method">Предпочтительный способ оплаты:</label>
+        <select id="payment_method" name="payment_method">
+            <option value="cash">Наличные</option>
+            <option value="credit">Кредит</option>
+            <option value="lease">Лизинг</option>
+        </select>
+        <label for="car_condition">Предпочтение нового или подержанного автомобиля:</label>
+        <select id="car_condition" name="car_condition">
+            <option value="new">Новый</option>
+            <option value="used">Подержанный</option>
+        </select>
+        <label for="car_dealer">Предпочтительный дилер или частный продавец:</label>
+        <select id="car_dealer" name="car_dealer">
+            <option value="dealer">Дилер</option>
+            <option value="private">Частный продавец</option>
+        </select>
+        <label for="car_warranty">Важность гарантии:</label>
+        <select id="car_warranty" name="car_warranty">
+            <option value="very_important">Очень важно</option>
+            <option value="somewhat_important">Важно</option>
+            <option value="not_important">Не важно</option>
+        </select>
+        <label for="car_brand_new">Предпочтительный бренд для нового автомобиля:</label>
+        <input type="text" id="car_brand_new" name="car_brand_new">
+        <input type="reset" value="Очистить">
+        <input type="submit" value="Отправить">
+
+</body>
+
+</html>
