@@ -2,87 +2,92 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Личная форма</title>
     <link rel="stylesheet" href="css/1style.css">
 </head>
 
 <body>
     <form action="/submit" method="post">
-        <label for="fname">Имя:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Фамилия:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="address">Адрес:</label><br>
-        <input type="text" id="address" name="address"><br>
-        <label>Интересы:</label><br>
-        <input type="checkbox" id="music" name="interests" value="music">
-        <label for="music">Музыка</label><br>
-        <input type="checkbox" id="sports" name="interests" value="sports">
-        <label for="sports">Спорт</label><br>
-        <input type="checkbox" id="movies" name="interests" value="movies">
-        <label for="movies">Фильмы</label><br>
-        <label for="username">Имя пользователя:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Пароль:</label><br>
-        <input type="password" id="password" name="password"><br>
-        <label for="comments">Комментарии:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
-        <label for="birthdate">Дата рождения:</label><br>
-        <div class="date-inputs">
-            <select name="day"" required>
-                    <option value=" 1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-            <select name="month" required>
-                <option value="01">Январь</option>
-                <option value="02">Февраль</option>
-                <option value="03">Март</option>
-                <option value="04">Апрель</option>
-                <option value="05">Май</option>
-                <option value="06">Июнь</option>
-                <option value="07">Июль</option>
-                <option value="08">Август</option>
-                <option value="09">Сентябрь</option>
-                <option value="10">Октябрь</option>
-                <option value="11">Ноябрь</option>
-                <option value="12">Декабрь</option>
-            </select>
-            <input type="text" name="year" placeholder="Год" required>
-        </div>
+        <fieldset>
+            <legend>Личная форма</legend><br>
 
-        <!-- <input type="date" id="birthdate" name="birthdate"><br> -->
-        <input type="submit" value="Отправить">
+            <label for="fname">Имя:</label><br>
+            <input type="text" id="fname" name="fname" maxlength="15" required><br>
+            <label for="surname">Фамилия:</label><br>
+            <input type="text" id="surname" name="surname" maxlength="15" required><br>
+            <label for="address">Адрес:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <label>Интересы:</label>
+
+            <label for="music">Музыка<input type="checkbox" id="music" name="interests" value="music"></label>
+
+            <label for="sports">Спорт<input type="checkbox" id="sports" name="interests" value="sports"></label>
+
+            <label for="movies">Фильмы<input type="checkbox" id="movies" name="interests" value="movies"></label><br>
+            <label for="username">Имя пользователя:</label><br>
+            <input type="text" id="username" name="username" maxlength="10" required><br>
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password" maxlength="15" required><br>
+            <label for="comments">Комментарии:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+            <label for="birthdate">Дата рождения:</label><br>
+            <div class="date-inputs">
+                <select name="day" required>
+                    <option value=" 1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="month" required>
+                    <option value="01">Январь</option>
+                    <option value="02">Февраль</option>
+                    <option value="03">Март</option>
+                    <option value="04">Апрель</option>
+                    <option value="05">Май</option>
+                    <option value="06">Июнь</option>
+                    <option value="07">Июль</option>
+                    <option value="08">Август</option>
+                    <option value="09">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                </select>
+                <input type="text" name="year" placeholder="Год" required>
+            </div>
+
+            <!-- <input type="date" id="birthdate" name="birthdate"><br> -->
+            <input type="submit" value="Отправить">
     </form>
-    <p>Перейти на <a href="https://www.example.com">другой веб-документ</a>.</p>
+    <p>Перейти на <a href="ex2.html">другой веб-документ</a>.</p>
+    </fieldset>
 </body>
 
 </html>

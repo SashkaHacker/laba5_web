@@ -2,42 +2,46 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Опрос общественного мнения</title>
     <link rel="stylesheet" href="../css/2style.css">
 </head>
 
 <body>
     <form>
-        <h2>Страница 3: О ваших предпочтениях в автомобилях</h2>
-        <label for="car_opinion">Ваше отношение к автомобилям:</label>
-        <select id="car_opinion" name="car_opinion">
-            <option value="love_them">Обожаю их</option>
-            <option value="like_them">Нравятся</option>
-            <option value="neutral">Нейтральное</option>
-            <option value="dislike_them">Не нравятся</option>
-            <option value="hate_them">Ненавижу их</option>
-        </select>
-        <label for="car_type">Предпочтительный тип автомобиля:</label>
-        <select id="car_type" name="car_type">
-            <option value="sedan">Седан</option>
-            <option value="suv">Внедорожник</option>
-            <option value="truck">Грузовик</option>
-            <option value="minivan">Минивэн</option>
-            <option value="sportscar">Спортивный автомобиль</option>
-        </select>
-        <label for="car_brand">Предпочтительный бренд автомобиля:</label>
-        <input type="text" id="car_brand" name="car_brand">
-        <label for="car_color">Предпочтительный цвет автомобиля:</label>
-        <input type="text" id="car_color" name="car_color">
-        <label for="car_transmission">Предпочтительный тип трансмиссии:</label>
-        <select id="car_transmission" name="car_transmission">
-            <option value="manual">Механика</option>
-            <option value="automatic">Автомат</option>
-        </select>
-        <input type="reset" value="Очистить">
-        <input type="submit" value="Отправить">
-        <a href="4.html" class="button-link">Перейти на следующий страницу</a>
+        <fieldset>
+            <legend>Страница 3: О ваших предпочтениях в автомобилях</legend>
 
+
+            <select id="car_opinion" name="car_opinion">
+                <option value="love_them">Обожаю их</option>
+                <option value="like_them">Нравятся</option>
+                <option value="neutral">Нейтральное</option>
+                <option value="dislike_them">Не нравятся</option>
+                <option value="hate_them">Ненавижу их</option>
+            </select>
+            <label for="car_type">Предпочтительный тип автомобиля:</label>
+            <select id="car_type" name="car_type">
+                <option value="sedan">Седан</option>
+                <option value="suv">Внедорожник</option>
+                <option value="truck">Грузовик</option>
+                <option value="minivan">Минивэн</option>
+                <option value="sportscar">Спортивный автомобиль</option>
+            </select>
+            <label for="car_brand">Предпочтительный бренд автомобиля:</label>
+            <input type="text" id="car_brand" name="car_brand">
+            <label for="car_color">Предпочтительный цвет автомобиля:</label>
+            <input type="text" id="car_color" name="car_color">
+            <label for="car_transmission">Предпочтительный тип трансмиссии:
+                <input type="radio" name="car_transmission" value="auto">Автомат
+                <input type="radio" name="car_transmission" value="mechanical">Механика
+                <input type="radio" name="car_transmission" value="robot">Робот
+            </label>
+
+            <input type="reset" value="Очистить">
+            <input type="submit" value="Отправить">
+            <a href="4.html" class="button-link">Перейти на следующий страницу</a>
+        </fieldset>
 </body>
 
 </html>
